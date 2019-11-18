@@ -16,5 +16,11 @@ def happy_birthday(birthday_kids)
 end 
 
 def age_appropriate_birthday(array)
-  
+  array.each{|key, value|
+    if value < 13
+    puts "Happy Birthday #{key}! You are now #{value} years old!"
+      else
+    puts "You are too old for this."
+    end 
+  }
 end 
